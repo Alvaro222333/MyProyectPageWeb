@@ -1,0 +1,5 @@
+C:\Users\Core i5\Downloads\TecnologiasInternet\TecnologiasInternet\USIP\USIP.Model\bin\Debug\USIP.Model.dll
+C:\Users\Core i5\Downloads\TecnologiasInternet\TecnologiasInternet\USIP\USIP.Model\bin\Debug\USIP.Model.pdb
+C:\Users\Core i5\Downloads\TecnologiasInternet\TecnologiasInternet\USIP\USIP.Model\obj\Debug\USIP.Model.csproj.CoreCompileInputs.cache
+C:\Users\Core i5\Downloads\TecnologiasInternet\TecnologiasInternet\USIP\USIP.Model\obj\Debug\USIP.Model.dll
+C:\Users\Core i5\Downloads\TecnologiasInternet\TecnologiasInternet\USIP\USIP.Model\obj\Debug\USIP.Model.pdb

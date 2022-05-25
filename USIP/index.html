@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="utf-8" />
+	<link href="Content/boostrap3/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+		  rel="stylesheet">
+
+	<link href="Content/boostrap3/css/sb-admin-2.css" rel="stylesheet">
+	<link rel="stylesheet" href="lib/bootstrap-additions/dist/bootstrap-additions.min.css" />
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body id="page-top" style="font-size: 1.3rem !important;">
+
+	<div ng-controller="AppCtrl">
+		<!-- Page Wrapper -->
+		<div id="wrapper">
+
+			<!-- Sidebar -->
+			<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style=" padding: 10px;">
+
+				<!-- Sidebar - Brand -->
+				<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/#!/classlist">
+					<div class="sidebar-brand-text mx-3">Escuela GTA</div>
+				</a>
+
+				<!-- Divider -->
+				<hr class="sidebar-divider my-0">
+
+				<!-- Nav Item - Dashboard -->
+				<li class="nav-item active">
+					<a class="nav-link" href="/#!/dashboard">
+						<i class="fas fa-fw fa-tachometer-alt"></i>
+						<span>Inicio</span>
+					</a>
+				</li>
+
+				<!-- Divider -->
+				<hr class="sidebar-divider">
+
+				<!-- Heading -->
+				<div class="sidebar-heading">
+					Administracion
+				</div>
+				<li class="nav-item">
+					<a class="nav-link" href="#" style="width: 100%;">
+						<i class="fas fa-fw fa-chart-area"></i>
+						<span>Control educativo</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#!/subjectlist">
+						<i class="fas fa-fw fa-table"></i>
+						<span>Materias</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/#!/classlist">
+						<i class="fas fa-fw fa-table"></i>
+						<span>Cursos</span>
+					</a>
+				</li>
+				<hr class="sidebar-divider">
+
+				<div class="sidebar-heading">
+					Registros
+				</div>
+				<li class="nav-item">
+					<a class="nav-link" href="/#!/home">
+						<i class="fas fa-fw fa-chart-area"></i>
+						<span>Estudiantes</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/#!/teacherlist">
+						<i class="fas fa-fw fa-chart-area"></i>
+						<span>Profesores</span>
+					</a>
+				</li>
+
+
+
+
+			</ul>
+			<!-- End of Sidebar -->
+			<!-- Content Wrapper -->
+			<div id="content-wrapper" class="d-flex flex-column">
+
+				<!-- Main Content -->
+				<div id="content">
+
+					<!-- Topbar -->
+					<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" style="font-size: 1.2em !important;">
+
+						<!-- Sidebar Toggle (Topbar) -->
+						<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+							<i class="fa fa-bars"></i>
+						</button>
+
+
+						<!-- Topbar Navbar -->
+						<ul class="navbar-nav ml-auto">
+
+							<!-- Nav Item - User Information -->
+							<li class="nav-item dropdown no-arrow">
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+								   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
+								</a>
+								<!-- Dropdown - User Information -->
+								<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+									 aria-labelledby="userDropdown">
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="#" style="font-size: 1.2em !important;" data-toggle="modal" data-target="#logoutModal">
+										<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+										Salir
+									</a>
+								</div>
+							</li>
+
+						</ul>
+
+					</nav>
+					<div class="container-fluid">
+						<ui-view></ui-view>
+					</div>
+
+				</div>
+				<!-- End of Main Content -->
+				<!-- Footer -->
+				<footer class="sticky-footer bg-white">
+					<div class="container my-auto">
+						<div class="copyright text-center my-auto">
+							<span>Proyecto 2022</span>
+						</div>
+					</div>
+				</footer>
+				<!-- End of Footer -->
+
+			</div>
+			<!-- End of Content Wrapper -->
+
+		</div>
+		<!-- End of Page Wrapper -->
+		<!-- Scroll to Top Button-->
+		<a class="scroll-to-top rounded" href="#page-top">
+			<i class="fas fa-angle-up"></i>
+		</a>
+
+		<!-- Logout Modal-->
+		<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			 aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Informacion</h5>
+						<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">×</span>
+						</button>
+					</div>
+					<div class="modal-body">Esta seguro de que quiere cerrar la sesion?.</div>
+					<div class="modal-footer">
+						<button class="btn btn-secondary" type="button" data-dismiss="modal">Ahora no</button>
+						<a class="btn btn-primary" href="/login">Salir</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular-confirm-modal/angular-confirm.min.js"></script>
+	<script src="lib/angular-cookies/angular-cookies.min.js"></script>
+	<script src="lib/angular-route/angular-route.min.js"></script>
+	<script src="lib/angular-resource/angular-resource.min.js"></script>
+	<script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="lib/angular-animate/angular-animate.min.js"></script>
+	<script src="lib/angular-aria/angular-aria.min.js"></script>
+	<script src="lib/angular-idle/angular-idle.min.js"></script>
+	<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="lib/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+
+	<script src="lib/angular-material/angular-material.min.js"></script>
+	<script src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="lib/bootstrap-filestyle/src/bootstrap-filestyle.min.js"></script>
+	<script src="lib/underscore/underscore-min.js"></script>
+
+
+	<script src="Scripts/app.js"></script>
+	<script src="Scripts/dashboard/dashboard.js"></script>
+	<script src="Scripts/home/home.js"></script>
+	<script src="Scripts/student/student.js"></script>
+	<script src="Scripts/course/course.js"></script>
+	<script src="Scripts/classlist/classlist.js"></script>
+	<script src="Scripts/subjectlist/subjectlist.js"></script>
+	<script src="Scripts/subject/subject.js"></script>
+	<script src="Scripts/teacherlist/teacherlist.js"></script>
+	\<script src="Scripts/teacher/teacher.js"></script>
+</body>
+</html>
